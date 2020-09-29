@@ -1,24 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ReactComponentTable from './react_component_table';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ReactComponentTable values = {[{id: 1, name: "Ankit", email: "dfd", address: "dfds",  bio: "dfd", image: "df"}]}
+                           columns = {["name","email","address"]} 
+      />
     </div>
   );
 }
